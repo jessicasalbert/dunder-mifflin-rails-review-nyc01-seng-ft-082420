@@ -3,3 +3,11 @@
 <p>name: <%= @dog.name%> </p>
 <p>breed: <%= @dog.breed%> </p>
 <p>age: <%= @dog.age%> </p>
+
+
+<h3> Owners </h3>
+<ul>
+<% @dog.employees.each do |employee| %>
+    <li> <%= employee.first_name  %> <%= employee.last_name %> </li>
+<% end %>
+</ul>
